@@ -591,11 +591,7 @@ td {
 
 #g-site-menu {
   left: 375px;
-	z-index:999999 !important;
-}
-
-#g-site-menu ul {
-	z-index:999999 !important;
+	z-index:auto !important;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default { 
@@ -646,19 +642,6 @@ td {
 	z-index:999999 !important;
 }
 
-form li {
-  margin: 0 !important;
-  padding: .3em 1.5em .3em 1em;
-}
-
-form ul ul {
-  clear: both;
-}
-
-form ul ul li {
-  float: left;
-}
-
 input,
 select,
 textarea {
@@ -667,13 +650,22 @@ textarea {
   padding: .2em;
 }
 
+input {
+  font-size:12px;
+}
+
 input[type="submit"],
 input[type="reset"] {
   display: inline;
   clear: none;
   float: left;
+	border:1px solid #e8e8e8;
 }
 
 .g-menu-link[title="Home"] {
   display:none;
 } 
+
+#g-info {
+  display:none;
+}
