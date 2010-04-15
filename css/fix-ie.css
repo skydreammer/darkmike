@@ -1,10 +1,6 @@
 /**
  * Fix display in IE 6, 7
  */
-#doc4 {
-  border:3px solid #d7e1fa;
-}
-
 #g-banner {
   z-index: 2;
   zoom: 1;

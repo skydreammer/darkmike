@@ -460,7 +460,7 @@ td {
 
 
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
-/*-*-*-       DarkMike Customizations     -*-*-*/
+/*-*-*-                    DarkMike Customizations                  -*-*-*/
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 body, html {
   background-color: #000000;
@@ -525,7 +525,13 @@ td {
 	-webkit-opacity:.9;
 	opacity:.9;
   position: relative;
-  z-index: 100000;
+  z-index: 10;
+}
+
+#g-site-menu {
+  left: 375px;
+	position:absolute;
+	z-index:11;
 }
 
 #g-content {
@@ -591,11 +597,6 @@ td {
 	behavior: url(ie-css3.htc);
 }
 
-#g-site-menu {
-  left: 375px;
-	z-index:auto !important;
-}
-
 .ui-state-default, .ui-widget-content .ui-state-default { 
   border: 1px solid #16181a;
   background: #404243 !important;
@@ -631,7 +632,7 @@ td {
 .sf-menu li li ul li {
   background-color: #000000;
 	background:url(../images/gradient.jpg);
-	z-index:9999 !important;
+	z-index:9 !important;
 	border:0px;
 }
 
@@ -647,7 +648,6 @@ td {
 .sf-menu li:hover {
   background-color: #2a2a2a;
 	background:url(../images/gradient_hover.jpg);
-	z-index:999999 !important;
 }
 
 input,
