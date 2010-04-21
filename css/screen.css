@@ -525,13 +525,13 @@ td {
 	-webkit-opacity:.9;
 	opacity:.9;
   position: relative;
-  z-index: 10;
+  z-index: 3;
 }
 
 #g-site-menu {
   left: 375px;
 	position:absolute;
-	z-index:11;
+	z-index:4;
 }
 
 #g-content {
@@ -632,7 +632,7 @@ td {
 .sf-menu li li ul li {
   background-color: #000000;
 	background:url(../images/gradient.jpg);
-	z-index:9 !important;
+	z-index:5 !important;
 	border:0px;
 }
 
