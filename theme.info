@@ -1,6 +1,6 @@
 name = "Dark Mike"
-description = "A dark theme with style. CSS3 compatible browsers get best features."
-version = 1
+description = "Dark styled, Gallery 3 RC2 Theme with CSS3 support where available"
+version = 1.1
 author = "Mike Pearce"
 site = 1
 admin = 0

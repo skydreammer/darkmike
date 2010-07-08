@@ -43,6 +43,9 @@ $(document).ready(function() {
     });
   }
 
+  // Remove titles for menu options since we're displaying that text anyway
+  $(".sf-menu a, .sf-menu li").removeAttr("title");
+
   // Album and search results views
   if ($("#g-album-grid").length) {
     // Set equal height for album items and vertically align thumbnails/metadata
@@ -108,6 +111,9 @@ $(document).ready(function() {
       duration: 1000,
       hash: true
     });
+
+    $(this).find(".g-dialog-link").gallery_dialog();
+    $(this).find(".g-ajax-link").gallery_ajax();
   }
 
   // Initialize button hover effect
