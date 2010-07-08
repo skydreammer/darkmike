@@ -87,9 +87,9 @@
           <?= $theme->user_menu() ?>
           <?= $theme->header_top() ?>
 
-          <!-- hide the menu and make it visible after the page has loaded, to minimize menu flicker -->
+          <!-- hide the menu until after the page has loaded, to minimize menu flicker -->
           <div id="g-site-menu" style="visibility: hidden">
-          <?= $theme->site_menu() ?>
+            <?= $theme->site_menu($theme->item() ? "#g-item-id-{$theme->item()->id}" : "") ?>
           </div>
           <script type="text/javascript"> $(document).ready(function() { $("#g-site-menu").css("visibility", "visible"); }) </script>
 
@@ -107,12 +107,14 @@
                  level you're on the right page. -->
             <a href="<?= $parent->url($parent == $theme->item()->parent() ?
                      "show={$theme->item()->id}" : null) ?>">
-              <?= html::purify($parent->title) ?>
+              <?= text::limit_chars(html::purify($parent->title), 35) ?>
             </a>
           </li>
           <? $i++ ?>
           <? endforeach ?>
-          <li class="g-active<? if ($i == 0) print " g-first" ?>"><?= html::purify($theme->item()->title) ?></li>
+          <li class="g-active<? if ($i == 0) print " g-first" ?>">
+            <?= text::limit_chars(html::purify($theme->item()->title), 35) ?>
+          </li>
         </ul>
         <? endif ?>
       </div>
